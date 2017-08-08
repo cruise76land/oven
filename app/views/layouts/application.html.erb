@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" xml:lang="en-gb" class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+    <!--[if lt IE 9]>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Opus">
+    <meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--link rel="icon" href="icon.html" type="image/png"-->
+
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <%= stylesheet_link_tag('application', :media => 'all')%>
+
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+
+    <%= javascript_include_tag('application')%>
+
+	<title>Oveanly</title>
+</head>
+
+<body>
+	<div id="all">
+        <header class="page-header">
+            <div class="page-header-content container">
+                <div class="menu-button-container">
+                    <i id="menu-button" class="menu-button fa fa-reorder"></i>
+                </div>
+                <nav id="nav-top" class="nav-top">
+                    <ul>
+                        <li><a href="/pages/index.html">Home</a></li>
+                        <li><a href="/pages/about.html">About</a></li>
+                        <!--li><a href="menus.html">Menu</a></li-->
+                    </ul>
+                    &nbsp; &nbsp;
+                    <h1 class="logo-primary">
+                    	<a href="/pages/index.html">
+                    		<%= image_tag('Logo7.png')%>
+                    	</a>
+                    </h1>
+                    <div class="logo-secondary">
+                    	<a href="/pages/index.html">
+                    		<%= image_tag('Logo7_second.png')%>
+                    	</a>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Products</a>
+                        	<ul>
+                            	<li><a href="/product/index.html?id=1">Sweet things</a></li>
+                                <li><a href="/product/index.html?id=2">Savouries</a></li>
+                                <li><a href="/pages/index.html">Breads</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/pages/index.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+
+    <%= yield %>
+
+
+    <footer class="page-footer"> <!-- Footer start -->
+        <div class="footer-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 slim-left onscroll-animate" data-delay="400">
+                        <h4>
+                            <div class="social-icon-container">
+                                <a href="https://www.facebook.com/Oveanly-762118450633999/"><i class="fa fa-facebook"></i></a>
+                            </div>
+                            &nbsp; Stay in touch, find out what's baking
+                        </h4>
+                        <div class="margin-40"></div>
+                            <h4>Operating hours</h4>
+                            <p>
+                                Monday - Friday: <span class="highlight">08:00 am - 06:30 pm</span><br>
+                                Saturday: <span class="highlight">08:00 am - 2:30 pm</span>
+                            </p>
+                        </div>
+
+                        <div class="col-md-2 image-container">
+                            <a href="/pages/index.html">
+                                <%= image_tag('Logo7.png')%>
+                            </a>
+                            <div class="margin-50"></div>
+                        </div>
+                        <div class="col-md-5 slim-left onscroll-animate" data-delay="400">
+                            <div class="margin-10"></div>
+                            <h4>Interested in our products?</h4>
+                            <p>Leave us your email</p>
+                            <form class="form-subscribe" id="rss-subscribe" action="http://ignitionthemes.co/template/bakery/save_rss.php" method="post" data-email-not-set-msg="Email must be set" data-ajax-fail-msg="Ajax could not set the request" data-success-msg="Email successfully added">
+                                <div class="email-container">
+                                    <input type="text" name="email">
+                                </div>
+                                <div class="submit-container">
+                                    <input type="submit" value="Mail Me">
+                                </div>
+                                <p class="return-msg"></p>
+                            </form>
+                            <div class="margin-50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .footer-light -->
+
+            <div class="footer-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-5 slim-right onscroll-animate">
+                                    <script type="text/javascript">
+                                        document.write(new Date());
+                                    </script>
+                                </div>
+                                <div class="col-sm-6 footer-column onscroll-animate" data-delay="300">
+                                    © All rights reserved.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-6 footer-column onscroll-animate" data-delay="400">
+
+                                    <div class="margin-40"></div>
+                                </div>
+                                <div class="col-sm-6 footer-column onscroll-animate" data-delay="500">
+                                    <h4>Contact Us</h4>
+                                    <div class="icon-opening-wrapper">
+                                        <div class="icon-opening-container">
+                                            <p class="icon-opening"><i class="fa fa-phone"></i></p>
+                                            <p class="icon-opening-content">+91 9999999999</p>
+                                        </div>
+                                    </div>
+                                    <div class="icon-opening-wrapper">
+                                        <div class="icon-opening-container">
+                                            <p class="icon-opening"><i class="fa fa-location-arrow"></i></p>
+                                            <p class="icon-opening-content">78/2-30 1st Cross<br>
+                                            Tavarekere Main Rd,<br>
+                                            SG Palya, Bangalore 560029</p>
+                                        </div>
+                                    </div>
+                                    <div class="icon-opening-wrapper">
+                                        <div class="icon-opening-container">
+                                            <p class="icon-opening"><i class="fa fa-globe"></i></p>
+                                            <p class="icon-opening-content">www.oveanly.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="margin-40"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#all" class="to-top scroll-to"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

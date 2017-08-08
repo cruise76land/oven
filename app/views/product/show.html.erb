@@ -1,0 +1,76 @@
+<section class="top-section">
+        	<div class="offset-borders">
+                <div class="full-header-container" id="header-gallery">
+                    <div class="full-header">
+                        <div class="container">
+                            <h1>Product details</h1>
+                            <!-- <h3>Here you will find our single pages</h3> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery-section">
+            <div class="center-logo onscroll-animate" data-delay="800">
+            	<%= image_tag('Logo7_second.png')%>
+            </div>
+        	<div class="container">
+                <div class="col-md-5">
+                    <article class="gallery-info">
+                        <div class="article-header-5">
+                            <div class="price-label onscroll-animate" data-delay="500">
+                                <span class="price-label-content"><a href="/pages/contact.html" class="hover-item-price">&#8377;&#8377;</a></span>
+                            </div>
+                            <span class="single-product"><h1><%= @product.product_name %></h1></span>
+                            <h3>
+                            	<% if @product.product_type_id == 1 %>
+                            			Sweet
+                            	<%	else %>
+                            			Savory
+                            	<%	end %>
+
+                            </h3>
+                        </div>
+                        <p><%= @product.description1 %></p>
+                        <div class="margin-20"></div>
+                        <p><%= @product.description2 %></p>
+                        <div class="margin-20"></div>
+                        <% if @product.description3 != "" %>
+                        	<p><%= @product.description3 %></p>
+                        	<div class="margin-20"></div>
+                        <% end %>
+                    </article>
+
+                    <div class="margin-20"></div>
+
+                    <!-- <div class="onscroll-animate">
+                        <div class="article-header">
+                            <h2>Share the item</h2>
+                        </div>
+                        <div class="social-icon-container-alt-small">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </div>
+                        <div class="social-icon-container-alt-small">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                        <div class="social-icon-container-alt-small">
+                            <a href="#"><i class="fa fa-rss"></i></a>
+                        </div>
+                        <div class="social-icon-container-alt-small">
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="col-md-6 col-md-offset-1 onscroll-animate single-product-image">
+                    <%= image_tag(@product.image, :class=>"img-responsive") %>
+                </div>
+            </div>
+        </section>
+
+        <p class="text-center onscroll-animate">
+            <a href="/product/index.html" class="button-void">See all products</a>
+        </p>
+        </div><!-- .container -->
+        </div><!-- .section-content -->
+		</section>
