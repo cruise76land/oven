@@ -7,7 +7,6 @@ class ProductController < ApplicationController
   		@products = Product.all
   	else
   		@products = Product.where("product_type_id = ?", params[:id])
-  		Rails.logger.debug("Count: #{@products.inspect}")
   	end
   end
 

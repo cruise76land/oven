@@ -9,13 +9,13 @@
 <%  	end %>
     	<!-- .product-preview start -->
         <div class="product-preview">
-            <a href="/product/show.html?id=<%= id+1 %>"><%= image_tag(@products[id].image)%></a>
+            <a href="/product/show.html?id=<%= @products[id].id %>"><%= image_tag(@products[id].image)%></a>
         </div><!-- .product-preview end -->
 
         <!-- .product-detail-container start -->
         <div class="product-detail-container">
             <div class="product-detail">
-                <h2><a href="/product/show.html?id=<%= id+1 %>"><%= @products[id].product_name %></a></h2>
+                <h2><a href="/product/show.html?id=<%= @products[id].id %>"><%= @products[id].product_name %></a></h2>
                 <% if @products[id].ingredient_id == 1 %>
                 	<p><%= image_tag('veg.png')%>
                 <% else %>

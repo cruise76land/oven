@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   	root 'pages#index'
 
   	match ':controller(/:action(/:id))', :via => :get
+  	match ':controller(/:action(/:id))', :via => :post
 end

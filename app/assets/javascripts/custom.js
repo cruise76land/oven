@@ -162,6 +162,7 @@ $(window).load(function(e) {
   @param all_fields - array of names of all fields in the form element that will be send
   @param required_fields - array of names of all fields in the form element that must be set - cannot be empty
 */
+/*
 function form_to_ajax_request(form_el, all_fields, required_fields) {
 	var fields_values = [];
 	var error = false;
@@ -259,4 +260,4 @@ function showReturnMessage(form_el) {
 $('.return-msg').click(function(e) {
 	$(this).removeClass('show-return-msg').html('&nbsp;');
 });
-
+*/
