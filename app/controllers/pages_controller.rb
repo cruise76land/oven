@@ -12,9 +12,8 @@ class PagesController < ApplicationController
 
 	end
 
-	def mailme
-		Rails.logger.debug("My object: #{params[:email]}")
-		redirect_to(:controller => "pages", :action => "index")
+	def contact
+
 	end
 
 end
