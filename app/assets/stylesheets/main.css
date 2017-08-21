@@ -174,7 +174,7 @@ ul {
   background-position: center center;
 }
 #header-contact {
-  background-image: url('bg_contact.png');
+  background-image: url('bg_about.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -190,7 +190,7 @@ ul {
   background-position: center center;
 }
 #header-menus {
-  background-image: url('bg_menus.png');
+  background-image: url('dough_web.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -206,7 +206,7 @@ ul {
   background-position: center center;
 }
 #header-shop {
-  background-image: url('bg_shop.png');
+  background-image: url('dough_web.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1036,7 +1036,8 @@ ul {
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  background-color: rgba(104, 79, 64, 0.9);
+  /*background-color: rgba(104, 79, 64, 0.9);*/
+  background-color: rgba(224, 212, 100, 0.7);
   color: #FFF;
   text-align: center;
   z-index: 20;
